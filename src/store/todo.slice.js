@@ -21,7 +21,6 @@ const todoSlice = createSlice({
         },
         DELETE_TODO: (state, action) => {
             state.todos = state.todos.filter(todo => todo.id !== action.payload.todo.id);
-            localStorage.setItem('todos', state.todos);
         }
     }
 });
