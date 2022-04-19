@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Button, FormControl, Input, InputLabel } from '@mui/material';
 
 
-const TodoInput = ({ handler, value }) => {
+const TodoInput = ({ handler, value, btnTitle }) => {
     const [task, setTask] = useState(value);
 
     return (
@@ -22,8 +22,9 @@ const TodoInput = ({ handler, value }) => {
                     fullWidth />
             </FormControl>
             <Button onClick={() => { handler(task); setTask('') }}
-                variant='contained'>
-                ADD
+                variant='contained'
+                color='success'>
+                {btnTitle}
             </Button>
         </Box>
     )

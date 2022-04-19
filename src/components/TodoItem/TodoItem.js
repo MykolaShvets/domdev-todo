@@ -32,7 +32,7 @@ const TodoItem = ({ todo }) => {
         onChange={() => dispatch(SET_IS_DONE({ todo }))} />
 
       {isEditeble ?
-        <TodoInput handler={editHandler} value={todo.body} />
+        <TodoInput handler={editHandler} value={todo.body} btnTitle={<EditIcon/>}/>
         :
         <Typography component='p' variant='h5'>{todo.body}</Typography>
       }
