@@ -28,6 +28,7 @@ const TodoItem = ({ todo }) => {
       color={todo.isDone ? '#1677d2' : '#010101'}>
       <Checkbox icon={<CheckCircleIcon />}
         checkedIcon={<CheckCircleIcon />}
+        checked={todo.isDone}
         onChange={() => dispatch(SET_IS_DONE({ todo }))} />
 
       {isEditeble ?
