@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 
 import TodoItem from './../TodoItem/TodoItem';
 
